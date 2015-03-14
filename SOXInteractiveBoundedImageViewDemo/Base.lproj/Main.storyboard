@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SOXInteractiveBoundedImageViewDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +15,47 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9F2-04-RUf" userLabel="Bounding View">
+                                <rect key="frame" x="50" y="50" width="500" height="500"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s55-b4-64s">
+                                <rect key="frame" x="50" y="562" width="114" height="20"/>
+                                <state key="normal" title="Spawn Bounded">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="spawnBounded:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxP-ys-w6p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXw-to-Kkh">
+                                <rect key="frame" x="468" y="562" width="82" height="20"/>
+                                <state key="normal" title="Spawn Free">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="spawnFree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Okd-mo-DYO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BXw-to-Kkh" firstAttribute="top" secondItem="9F2-04-RUf" secondAttribute="bottom" constant="12" id="5u8-Ja-Xmv"/>
+                            <constraint firstItem="9F2-04-RUf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="HKI-lV-FJD"/>
+                            <constraint firstAttribute="trailing" secondItem="9F2-04-RUf" secondAttribute="trailing" constant="50" id="NSQ-nx-vhY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9F2-04-RUf" secondAttribute="bottom" constant="50" id="Pcb-px-LHs"/>
+                            <constraint firstItem="s55-b4-64s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="c4d-Ok-OTr"/>
+                            <constraint firstAttribute="trailing" secondItem="BXw-to-Kkh" secondAttribute="trailing" constant="50" id="cAI-uS-SAG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s55-b4-64s" secondAttribute="bottom" constant="18" id="dOo-vn-hFZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BXw-to-Kkh" secondAttribute="bottom" constant="18" id="jUV-bY-FPa"/>
+                            <constraint firstItem="s55-b4-64s" firstAttribute="top" secondItem="9F2-04-RUf" secondAttribute="bottom" constant="12" id="p0f-eK-mi0"/>
+                            <constraint firstItem="9F2-04-RUf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="zHF-AT-akK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="boundingView" destination="9F2-04-RUf" id="CIX-8R-Eir"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
