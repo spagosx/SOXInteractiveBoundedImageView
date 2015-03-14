@@ -22,16 +22,6 @@
 		F10979A41AB4B5C70053F0B5 /* clip_free@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F109799E1AB4B5C70053F0B5 /* clip_free@3x.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F109797D1AB4B0BC0053F0B5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F109795F1AB4B0BB0053F0B5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F10979661AB4B0BB0053F0B5;
-			remoteInfo = SOXInteractiveBoundedImageViewDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		F10979671AB4B0BB0053F0B5 /* SOXInteractiveBoundedImageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOXInteractiveBoundedImageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F109796B1AB4B0BB0053F0B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,7 +30,6 @@
 		F10979711AB4B0BB0053F0B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F10979731AB4B0BB0053F0B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F10979761AB4B0BB0053F0B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F109797C1AB4B0BC0053F0B5 /* SOXInteractiveBoundedImageViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOXInteractiveBoundedImageViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F109798D1AB4B0CE0053F0B5 /* SOXPanRotateZoomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOXPanRotateZoomImageView.swift; sourceTree = "<group>"; };
 		F109798E1AB4B0CE0053F0B5 /* SOXInteractiveBoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOXInteractiveBoundedImageView.swift; sourceTree = "<group>"; };
 		F10979991AB4B5C70053F0B5 /* clip_bounded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clip_bounded.png; sourceTree = "<group>"; };
@@ -53,13 +42,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		F10979641AB4B0BB0053F0B5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F10979791AB4B0BC0053F0B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				F10979671AB4B0BB0053F0B5 /* SOXInteractiveBoundedImageViewDemo.app */,
-				F109797C1AB4B0BC0053F0B5 /* SOXInteractiveBoundedImageViewDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,24 +132,6 @@
 			productReference = F10979671AB4B0BB0053F0B5 /* SOXInteractiveBoundedImageViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F109797B1AB4B0BC0053F0B5 /* SOXInteractiveBoundedImageViewDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F10979891AB4B0BC0053F0B5 /* Build configuration list for PBXNativeTarget "SOXInteractiveBoundedImageViewDemoTests" */;
-			buildPhases = (
-				F10979781AB4B0BC0053F0B5 /* Sources */,
-				F10979791AB4B0BC0053F0B5 /* Frameworks */,
-				F109797A1AB4B0BC0053F0B5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F109797E1AB4B0BC0053F0B5 /* PBXTargetDependency */,
-			);
-			name = SOXInteractiveBoundedImageViewDemoTests;
-			productName = SOXInteractiveBoundedImageViewDemoTests;
-			productReference = F109797C1AB4B0BC0053F0B5 /* SOXInteractiveBoundedImageViewDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,10 +143,6 @@
 				TargetAttributes = {
 					F10979661AB4B0BB0053F0B5 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					F109797B1AB4B0BC0053F0B5 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = F10979661AB4B0BB0053F0B5;
 					};
 				};
 			};
@@ -201,7 +160,6 @@
 			projectRoot = "";
 			targets = (
 				F10979661AB4B0BB0053F0B5 /* SOXInteractiveBoundedImageViewDemo */,
-				F109797B1AB4B0BC0053F0B5 /* SOXInteractiveBoundedImageViewDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,13 +181,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F109797A1AB4B0BC0053F0B5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -244,22 +195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F10979781AB4B0BC0053F0B5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F109797E1AB4B0BC0053F0B5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F10979661AB4B0BB0053F0B5 /* SOXInteractiveBoundedImageViewDemo */;
-			targetProxy = F109797D1AB4B0BC0053F0B5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F10979701AB4B0BB0053F0B5 /* Main.storyboard */ = {
@@ -380,40 +316,6 @@
 			};
 			name = Release;
 		};
-		F109798A1AB4B0BC0053F0B5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SOXInteractiveBoundedImageViewDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOXInteractiveBoundedImageViewDemo.app/SOXInteractiveBoundedImageViewDemo";
-			};
-			name = Debug;
-		};
-		F109798B1AB4B0BC0053F0B5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SOXInteractiveBoundedImageViewDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOXInteractiveBoundedImageViewDemo.app/SOXInteractiveBoundedImageViewDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -433,14 +335,7 @@
 				F10979881AB4B0BC0053F0B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		F10979891AB4B0BC0053F0B5 /* Build configuration list for PBXNativeTarget "SOXInteractiveBoundedImageViewDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F109798A1AB4B0BC0053F0B5 /* Debug */,
-				F109798B1AB4B0BC0053F0B5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
